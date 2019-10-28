@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.gitee.zhoug'
 android {
     compileSdkVersion 27
 
@@ -13,9 +14,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        /* ndk{
-            abiFilters "armeabi-v7a"
-        }*/
+
     }
 
     buildTypes {
@@ -24,12 +23,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    /*  sourceSets{
-        main{
-            jni.srcDirs = []
-            jniLibs.srcDir 'src/main/jniLibs'
-        }
-    }*/
 
     resourcePrefix "live_"
     compileOptions {
