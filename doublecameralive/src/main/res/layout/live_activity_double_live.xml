@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.lake.librestreaming.ws.StreamLiveCameraView
+        android:id="@+id/stream_previewView_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <FrameLayout
+        android:id="@+id/container_front"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="开始"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/zcamera_btn_bg_cicle"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+</RelativeLayout>
